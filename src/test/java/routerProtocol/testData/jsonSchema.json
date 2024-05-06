@@ -1,0 +1,321 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "estimatedTime": {
+      "type": "number"
+    },
+    "isTransfer": {
+      "type": "boolean"
+    },
+    "destination": {
+      "type": "object",
+      "properties": {
+        "stableReserveAsset": {
+          "type": "object",
+          "properties": {
+            "symbol": {
+              "type": "string"
+            },
+            "resourceID": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "isWrappedAsset": {
+              "type": "boolean"
+            },
+            "chainId": {
+              "type": "string"
+            },
+            "decimals": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "isMintable": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "symbol",
+            "resourceID",
+            "address",
+            "isWrappedAsset",
+            "chainId",
+            "decimals",
+            "name",
+            "isMintable"
+          ]
+        },
+        "path": {
+          "type": "array",
+          "items": {}
+        },
+        "tokenPath": {
+          "type": "string"
+        },
+        "chainId": {
+          "type": "string"
+        },
+        "tokenAmount": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "items": {}
+        },
+        "chainType": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "object",
+          "properties": {
+            "symbol": {
+              "type": "string"
+            },
+            "resourceID": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "isWrappedAsset": {
+              "type": "boolean"
+            },
+            "chainId": {
+              "type": "string"
+            },
+            "decimals": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "isMintable": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "symbol",
+            "resourceID",
+            "address",
+            "isWrappedAsset",
+            "chainId",
+            "decimals",
+            "name",
+            "isMintable"
+          ]
+        },
+        "priceImpact": {
+          "type": "string"
+        },
+        "stableReserveAmount": {
+          "type": "string"
+        },
+        "dataTx": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "stableReserveAsset",
+        "path",
+        "tokenPath",
+        "chainId",
+        "tokenAmount",
+        "flags",
+        "chainType",
+        "asset",
+        "priceImpact",
+        "stableReserveAmount",
+        "dataTx"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "stableReserveAsset": {
+          "type": "object",
+          "properties": {
+            "symbol": {
+              "type": "string"
+            },
+            "resourceID": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "isWrappedAsset": {
+              "type": "boolean"
+            },
+            "chainId": {
+              "type": "string"
+            },
+            "decimals": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "isMintable": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "symbol",
+            "resourceID",
+            "address",
+            "isWrappedAsset",
+            "chainId",
+            "decimals",
+            "name",
+            "isMintable"
+          ]
+        },
+        "path": {
+          "type": "array",
+          "items": {}
+        },
+        "tokenPath": {
+          "type": "string"
+        },
+        "chainId": {
+          "type": "string"
+        },
+        "tokenAmount": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "items": {}
+        },
+        "chainType": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "object",
+          "properties": {
+            "symbol": {
+              "type": "string"
+            },
+            "resourceID": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "isWrappedAsset": {
+              "type": "boolean"
+            },
+            "chainId": {
+              "type": "string"
+            },
+            "decimals": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "isMintable": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "symbol",
+            "resourceID",
+            "address",
+            "isWrappedAsset",
+            "chainId",
+            "decimals",
+            "name",
+            "isMintable"
+          ]
+        },
+        "priceImpact": {
+          "type": "string"
+        },
+        "stableReserveAmount": {
+          "type": "string"
+        },
+        "dataTx": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "stableReserveAsset",
+        "path",
+        "tokenPath",
+        "chainId",
+        "tokenAmount",
+        "flags",
+        "chainType",
+        "asset",
+        "priceImpact",
+        "stableReserveAmount",
+        "dataTx"
+      ]
+    },
+    "toTokenAddress": {
+      "type": "string"
+    },
+    "bridgeFee": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "string"
+        },
+        "decimals": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "symbol",
+        "amount",
+        "decimals"
+      ]
+    },
+    "fuelTransfer": {},
+    "fromTokenAddress": {
+      "type": "string"
+    },
+    "slippageTolerance": {
+      "type": "string"
+    },
+    "partnerId": {
+      "type": "number"
+    },
+    "isWrappedToken": {
+      "type": "boolean"
+    },
+    "flowType": {
+      "type": "string"
+    },
+    "allowanceTo": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "estimatedTime",
+    "isTransfer",
+    "destination",
+    "source",
+    "toTokenAddress",
+    "bridgeFee",
+    "fuelTransfer",
+    "fromTokenAddress",
+    "slippageTolerance",
+    "partnerId",
+    "isWrappedToken",
+    "flowType",
+    "allowanceTo"
+  ]
+}
