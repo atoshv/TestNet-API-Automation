@@ -10,7 +10,10 @@ Feature: Dynamic API Invocation for USDT
         And param fromTokenChainId = parentChainId
         And param toTokenAddress = conversionAddress
         And param toTokenChainId = conversionChainId
-        And param amount = global.amount
+        * print ParentUSDTDecimal
+        * def valAmount = (100 * Math.pow(10, ParentUSDTDecimal)).toFixed(0)
+        * print valAmount
+        And param amount = valAmount
         And param partnerId = global.partnerId
         And param slippageTolerance = global.slippageTolerance
         And param destFuel = global.destFuel

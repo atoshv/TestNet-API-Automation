@@ -1,16 +1,17 @@
 package routerProtocol.common;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.poi.ss.usermodel.*;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ExcelToJsonConverter {
+	
+	private static final Logger logger = LogManager.getLogger(ExcelToJsonConverter.class);
 	
 	public static void main(String[] args) {
 		try {
@@ -29,14 +30,14 @@ public class ExcelToJsonConverter {
 			
 			System.out.println("JSON data saved to " + filePath);
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.error("An error occurred:", e);
 		}
 	}
 	
 	public static List<ChainData> readExcel(String filename) throws IOException {
 		List<ChainData> chainDataList = new ArrayList<>();
 		
-		FileInputStream file = new FileInputStream(new File(filename));
+		FileInputStream file = new FileInputStream(filename);
 		Workbook workbook = WorkbookFactory.create(file);
 		Sheet sheet = workbook.getSheetAt(0); // assuming data is in the first sheet
 		
@@ -47,19 +48,25 @@ public class ExcelToJsonConverter {
 				chainData.chain = row.getCell(0).getStringCellValue();
 				chainData.chainId = (int) row.getCell(1).getNumericCellValue();
 				chainData.USDTAddress = row.getCell(2).getStringCellValue();
+				chainData.USDTDecimal = (int) row.getCell(3).getNumericCellValue();
 				chainData.USDCAddress = row.getCell(4).getStringCellValue();
+				chainData.USDCDecimal = (int) row.getCell(5).getNumericCellValue();
 				chainData.WETHAddress = row.getCell(6).getStringCellValue();
+				chainData.WETHDecimal = (int) row.getCell(7).getNumericCellValue();
 				
 				List<ConversionData> conversionDataList = new ArrayList<>();
-				for (int j = 1; j <= sheet.getLastRowNum() ; j++) {
-					if(i==j) continue;
+				for (int j = 1; j <= sheet.getLastRowNum(); j++) {
+					if (i == j) continue;
 					Row row2 = sheet.getRow(j);
 					ConversionData conversionData = new ConversionData();
 					conversionData.chain = row2.getCell(0).getStringCellValue();
 					conversionData.chainId = (int) row2.getCell(1).getNumericCellValue();
 					conversionData.USDTAddress = row2.getCell(2).getStringCellValue();
+					conversionData.USDTDecimal = (int) row2.getCell(3).getNumericCellValue();
 					conversionData.USDCAddress = row2.getCell(4).getStringCellValue();
+					conversionData.USDCDecimal = (int) row2.getCell(5).getNumericCellValue();
 					conversionData.WETHAddress = row2.getCell(6).getStringCellValue();
+					conversionData.WETHDecimal = (int) row2.getCell(7).getNumericCellValue();
 					conversionDataList.add(conversionData);
 				}
 				chainData.conversion = conversionDataList;
@@ -73,20 +80,28 @@ public class ExcelToJsonConverter {
 		return chainDataList;
 	}
 	
-	static class ChainData {
+	public static class ChainData {
 		public String chain;
 		public int chainId;
 		public String USDTAddress;
+		public int USDTDecimal;
 		public String USDCAddress;
+		public int USDCDecimal;
 		public String WETHAddress;
+		public int WETHDecimal;
+		
 		public List<ConversionData> conversion = new ArrayList<>();
 	}
 	
-	static class ConversionData {
+	public static class ConversionData {
 		public String chain;
 		public int chainId;
 		public String USDTAddress;
+		public int USDTDecimal;
 		public String USDCAddress;
+		public int USDCDecimal;
 		public String WETHAddress;
+		public int WETHDecimal;
+		
 	}
 }

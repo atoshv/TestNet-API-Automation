@@ -10,7 +10,10 @@ Feature: Dynamic API Invocation for USDC
     And param fromTokenChainId = parentChainId
     And param toTokenAddress = conversionAddress
     And param toTokenChainId = conversionChainId
-    And param amount = global.amount
+    * print ParentUSDCDecimal
+    * def valAmount = (100 * Math.pow(10, ParentUSDCDecimal)).toFixed(0)
+    * print valAmount
+    And param amount = valAmount
     And param partnerId = global.partnerId
     And param slippageTolerance = global.slippageTolerance
     And param destFuel = global.destFuel

@@ -1,0 +1,2936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"16adb876-3849-412a-a14b-ec3238a0e4e5",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>routerProtocol.testScripts.testCases</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-05-08 12:13:36 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Calling USDT Js file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:7]"><span>[2:7]</span> <span>Calling USDC Js file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:11]"><span>[3:11]</span> <span>Calling WETH Js file</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">routerProtocol/testScripts/testCases.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Dynamic API Invocation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Calling USDT Js file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4761</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def prepareUSDTTransactions = karate.read(&#39;classpath:routerProtocol/testData/USDT.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">00:13:31.415 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call prepareUSDTTransactions</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4727</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">routerProtocol.testScripts.testUSDT</div>
+      </div>
+      <div class="time-cell passed">1021</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def global = Java.type(&#39;routerProtocol.common.Global&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-beta.pathfinder.routerprotocol.com/api/v2/quote&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenAddress = parentAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenChainId = parentChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenAddress = conversionAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenChainId = conversionChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ParentUSDTDecimal</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.13">00:13:34.482 [print] 6 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def valAmount = (100 * Math.pow(10, ParentUSDTDecimal)).toFixed(0)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.15">00:13:34.486 [print] 100000000 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param amount = valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param partnerId = global.partnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param slippageTolerance = global.slippageTolerance</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param destFuel = global.destFuel</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1004</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.20">00:13:34.493 request:
+1 &gt; GET https://api-beta.pathfinder.routerprotocol.com/api/v2/quote?toTokenAddress=0x55d398326f99059ff775485246999027b3197955&amp;amount=100000000&amp;destFuel=0&amp;toTokenChainId=56&amp;fromTokenAddress=0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&amp;slippageTolerance=2&amp;partnerId=1&amp;fromTokenChainId=42161
+1 &gt; Host: api-beta.pathfinder.routerprotocol.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:13:35.484 response time in milliseconds: 988
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: pf-api-response-time
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-RateLimit-Remaining: 19
+1 &lt; X-RateLimit-Reset: 1715107474.558565
+1 &lt; X-RateLimit-Total: 20
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; pf-api-response-time: 858ms
+1 &lt; Content-Length: 1569
+1 &lt; Date: Tue, 07 May 2024 18:43:35 GMT
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+{&quot;flowType&quot;:&quot;trustless&quot;,&quot;isTransfer&quot;:true,&quot;isWrappedToken&quot;:false,&quot;allowanceTo&quot;:&quot;0xef300fb4243a0ff3b90c8ccfa1264d78182adaa4&quot;,&quot;bridgeFee&quot;:{&quot;amount&quot;:&quot;251797501369300000&quot;,&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDT&quot;},&quot;fromTokenAddress&quot;:&quot;0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&quot;,&quot;toTokenAddress&quot;:&quot;0x55d398326f99059ff775485246999027b3197955&quot;,&quot;source&quot;:{&quot;chainId&quot;:&quot;42161&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;100000000&quot;,&quot;stableReserveAmount&quot;:&quot;100000000&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;destination&quot;:{&quot;chainId&quot;:&quot;56&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x55d398326f99059fF775485246999027B3197955&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x55d398326f99059fF775485246999027B3197955&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;99748202498630700000&quot;,&quot;stableReserveAmount&quot;:&quot;99748202498630700000&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;partnerId&quot;:1,&quot;fuelTransfer&quot;:null,&quot;slippageTolerance&quot;:&quot;2&quot;,&quot;estimatedTime&quot;:40}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">routerProtocol.testScripts.testUSDT</div>
+      </div>
+      <div class="time-cell passed">664</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def global = Java.type(&#39;routerProtocol.common.Global&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-beta.pathfinder.routerprotocol.com/api/v2/quote&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenAddress = parentAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenChainId = parentChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenAddress = conversionAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenChainId = conversionChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ParentUSDTDecimal</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.13">00:13:35.539 [print] 18 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def valAmount = (100 * Math.pow(10, ParentUSDTDecimal)).toFixed(0)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.15">00:13:35.545 [print] 100000000000000000000 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param amount = valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param partnerId = global.partnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param slippageTolerance = global.slippageTolerance</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param destFuel = global.destFuel</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">647</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.20">00:13:35.555 request:
+1 &gt; GET https://api-beta.pathfinder.routerprotocol.com/api/v2/quote?toTokenAddress=0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&amp;amount=100000000000000000000&amp;destFuel=0&amp;toTokenChainId=42161&amp;fromTokenAddress=0x55d398326f99059ff775485246999027b3197955&amp;slippageTolerance=2&amp;partnerId=1&amp;fromTokenChainId=56
+1 &gt; Host: api-beta.pathfinder.routerprotocol.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:13:36.194 response time in milliseconds: 635
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: pf-api-response-time
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-RateLimit-Remaining: 19
+1 &lt; X-RateLimit-Reset: 1715107475.63635
+1 &lt; X-RateLimit-Total: 20
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; pf-api-response-time: 478ms
+1 &lt; Content-Length: 1556
+1 &lt; Date: Tue, 07 May 2024 18:43:36 GMT
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+{&quot;flowType&quot;:&quot;trustless&quot;,&quot;isTransfer&quot;:true,&quot;isWrappedToken&quot;:false,&quot;allowanceTo&quot;:&quot;0x260687ebc6c55dadd578264260f9f6e968f7b2a5&quot;,&quot;bridgeFee&quot;:{&quot;amount&quot;:&quot;145245&quot;,&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDT&quot;},&quot;fromTokenAddress&quot;:&quot;0x55d398326f99059ff775485246999027b3197955&quot;,&quot;toTokenAddress&quot;:&quot;0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&quot;,&quot;source&quot;:{&quot;chainId&quot;:&quot;56&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x55d398326f99059fF775485246999027B3197955&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x55d398326f99059fF775485246999027B3197955&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;100000000000000000000&quot;,&quot;stableReserveAmount&quot;:&quot;100000000000000000000&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;destination&quot;:{&quot;chainId&quot;:&quot;42161&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDT&quot;,&quot;name&quot;:&quot;Tether USD&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9&quot;,&quot;resourceID&quot;:&quot;usdt&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;99854755&quot;,&quot;stableReserveAmount&quot;:&quot;99854755&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;partnerId&quot;:1,&quot;fuelTransfer&quot;:null,&quot;slippageTolerance&quot;:&quot;2&quot;,&quot;estimatedTime&quot;:40}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:7]</span>
+                <span class="scenario-name">Calling USDC Js file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3009</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def prepareUSDCTransactions = karate.read(&#39;classpath:routerProtocol/testData/USDC.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">00:13:31.354 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call prepareUSDCTransactions</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2975</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">routerProtocol.testScripts.testUSDC</div>
+      </div>
+      <div class="time-cell passed">2060</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def global = Java.type(&#39;routerProtocol.common.Global&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-beta.pathfinder.routerprotocol.com/api/v2/quote&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenAddress = parentAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenChainId = parentChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenAddress = conversionAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenChainId = conversionChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ParentUSDCDecimal</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">00:13:31.647 [print] 6 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def valAmount = (100 * Math.pow(10, ParentUSDCDecimal)).toFixed(0)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.15">00:13:31.674 [print] 100000000 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param amount = valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param partnerId = global.partnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param slippageTolerance = global.slippageTolerance</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param destFuel = global.destFuel</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2004</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.20">00:13:32.370 request:
+1 &gt; GET https://api-beta.pathfinder.routerprotocol.com/api/v2/quote?toTokenAddress=0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&amp;amount=100000000&amp;destFuel=0&amp;toTokenChainId=56&amp;fromTokenAddress=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&amp;slippageTolerance=2&amp;partnerId=1&amp;fromTokenChainId=42161
+1 &gt; Host: api-beta.pathfinder.routerprotocol.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:13:33.674 response time in milliseconds: 1288
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: pf-api-response-time
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-RateLimit-Remaining: 19
+1 &lt; X-RateLimit-Reset: 1715107472.662391
+1 &lt; X-RateLimit-Total: 20
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; pf-api-response-time: 857ms
+1 &lt; Content-Length: 1581
+1 &lt; Date: Tue, 07 May 2024 18:43:33 GMT
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+{&quot;flowType&quot;:&quot;trustless&quot;,&quot;isTransfer&quot;:true,&quot;isWrappedToken&quot;:false,&quot;allowanceTo&quot;:&quot;0xef300fb4243a0ff3b90c8ccfa1264d78182adaa4&quot;,&quot;bridgeFee&quot;:{&quot;amount&quot;:&quot;251797501369300000&quot;,&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDC&quot;},&quot;fromTokenAddress&quot;:&quot;0xaf88d065e77c8cC2239327C5EDb3A432268e5831&quot;,&quot;toTokenAddress&quot;:&quot;0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&quot;,&quot;source&quot;:{&quot;chainId&quot;:&quot;42161&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USD Coin&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xaf88d065e77c8cC2239327C5EDb3A432268e5831&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USD Coin&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xaf88d065e77c8cC2239327C5EDb3A432268e5831&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;100000000&quot;,&quot;stableReserveAmount&quot;:&quot;100000000&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;destination&quot;:{&quot;chainId&quot;:&quot;56&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USDC&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USDC&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;99748202498630700000&quot;,&quot;stableReserveAmount&quot;:&quot;99748202498630700000&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;partnerId&quot;:1,&quot;fuelTransfer&quot;:null,&quot;slippageTolerance&quot;:&quot;2&quot;,&quot;estimatedTime&quot;:40}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">routerProtocol.testScripts.testUSDC</div>
+      </div>
+      <div class="time-cell passed">705</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def global = Java.type(&#39;routerProtocol.common.Global&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-beta.pathfinder.routerprotocol.com/api/v2/quote&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenAddress = parentAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenChainId = parentChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenAddress = conversionAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenChainId = conversionChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ParentUSDCDecimal</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">00:13:33.746 [print] 18 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def valAmount = (100 * Math.pow(10, ParentUSDCDecimal)).toFixed(0)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.15">00:13:33.752 [print] 100000000000000000000 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param amount = valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param partnerId = global.partnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param slippageTolerance = global.slippageTolerance</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param destFuel = global.destFuel</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">685</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.20">00:13:33.765 request:
+1 &gt; GET https://api-beta.pathfinder.routerprotocol.com/api/v2/quote?toTokenAddress=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&amp;amount=100000000000000000000&amp;destFuel=0&amp;toTokenChainId=42161&amp;fromTokenAddress=0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&amp;slippageTolerance=2&amp;partnerId=1&amp;fromTokenChainId=56
+1 &gt; Host: api-beta.pathfinder.routerprotocol.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:13:34.442 response time in milliseconds: 676
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: pf-api-response-time
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-RateLimit-Remaining: 19
+1 &lt; X-RateLimit-Reset: 1715107473.899016
+1 &lt; X-RateLimit-Total: 20
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; pf-api-response-time: 480ms
+1 &lt; Content-Length: 1568
+1 &lt; Date: Tue, 07 May 2024 18:43:34 GMT
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+{&quot;flowType&quot;:&quot;trustless&quot;,&quot;isTransfer&quot;:true,&quot;isWrappedToken&quot;:false,&quot;allowanceTo&quot;:&quot;0x260687ebc6c55dadd578264260f9f6e968f7b2a5&quot;,&quot;bridgeFee&quot;:{&quot;amount&quot;:&quot;145245&quot;,&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDC&quot;},&quot;fromTokenAddress&quot;:&quot;0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d&quot;,&quot;toTokenAddress&quot;:&quot;0xaf88d065e77c8cC2239327C5EDb3A432268e5831&quot;,&quot;source&quot;:{&quot;chainId&quot;:&quot;56&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USDC&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:18,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USDC&quot;,&quot;chainId&quot;:&quot;56&quot;,&quot;address&quot;:&quot;0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;100000000000000000000&quot;,&quot;stableReserveAmount&quot;:&quot;100000000000000000000&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;destination&quot;:{&quot;chainId&quot;:&quot;42161&quot;,&quot;chainType&quot;:&quot;evm&quot;,&quot;asset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USD Coin&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xaf88d065e77c8cC2239327C5EDb3A432268e5831&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;stableReserveAsset&quot;:{&quot;decimals&quot;:6,&quot;symbol&quot;:&quot;USDC&quot;,&quot;name&quot;:&quot;USD Coin&quot;,&quot;chainId&quot;:&quot;42161&quot;,&quot;address&quot;:&quot;0xaf88d065e77c8cC2239327C5EDb3A432268e5831&quot;,&quot;resourceID&quot;:&quot;usdc-circle&quot;,&quot;isMintable&quot;:false,&quot;isWrappedAsset&quot;:false},&quot;tokenAmount&quot;:&quot;99854755&quot;,&quot;stableReserveAmount&quot;:&quot;99854755&quot;,&quot;path&quot;:[],&quot;flags&quot;:[],&quot;priceImpact&quot;:&quot;0&quot;,&quot;tokenPath&quot;:&quot;&quot;,&quot;dataTx&quot;:[]},&quot;partnerId&quot;:1,&quot;fuelTransfer&quot;:null,&quot;slippageTolerance&quot;:&quot;2&quot;,&quot;estimatedTime&quot;:40}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:11]</span>
+                <span class="scenario-name">Calling WETH Js file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5171</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def prepareWETHTransactions = karate.read(&#39;classpath:routerProtocol/testData/WETH.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">00:13:31.408 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call prepareWETHTransactions</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5137</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">routerProtocol.testScripts.testWETH</div>
+      </div>
+      <div class="time-cell passed">179</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def global = Java.type(&#39;routerProtocol.common.Global&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-beta.pathfinder.routerprotocol.com/api/v2/quote&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenAddress = parentAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenChainId = parentChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenAddress = conversionAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenChainId = conversionChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ParentWETHDecimal</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.13">00:13:36.263 [print] 18 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def valAmount = (100 * Math.pow(0.1, ParentWETHDecimal)).toFixed(0)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.15">00:13:36.274 [print] 0 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param amount = valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param partnerId = global.partnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param slippageTolerance = global.slippageTolerance</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param destFuel = global.destFuel</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">144</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.20">00:13:36.291 request:
+1 &gt; GET https://api-beta.pathfinder.routerprotocol.com/api/v2/quote?toTokenAddress=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&amp;amount=0&amp;destFuel=0&amp;toTokenChainId=56&amp;fromTokenAddress=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&amp;slippageTolerance=2&amp;partnerId=1&amp;fromTokenChainId=42161
+1 &gt; Host: api-beta.pathfinder.routerprotocol.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:13:36.427 response time in milliseconds: 134
+1 &lt; 400
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: pf-api-response-time
+1 &lt; vary: Origin
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 14
+1 &lt; Date: Tue, 07 May 2024 18:43:36 GMT
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+invalid amount
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">routerProtocol.testScripts.testWETH</div>
+      </div>
+      <div class="time-cell passed">151</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def global = Java.type(&#39;routerProtocol.common.Global&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-beta.pathfinder.routerprotocol.com/api/v2/quote&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenAddress = parentAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param fromTokenChainId = parentChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenAddress = conversionAddress</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param toTokenChainId = conversionChainId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print ParentWETHDecimal</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.13">00:13:36.462 [print] 18 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def valAmount = (100 * Math.pow(0.1, ParentWETHDecimal)).toFixed(0)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.15">00:13:36.467 [print] 0 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param amount = valAmount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param partnerId = global.partnerId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param slippageTolerance = global.slippageTolerance</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param destFuel = global.destFuel</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">136</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.20">00:13:36.478 request:
+1 &gt; GET https://api-beta.pathfinder.routerprotocol.com/api/v2/quote?toTokenAddress=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&amp;amount=0&amp;destFuel=0&amp;toTokenChainId=42161&amp;fromTokenAddress=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&amp;slippageTolerance=2&amp;partnerId=1&amp;fromTokenChainId=56
+1 &gt; Host: api-beta.pathfinder.routerprotocol.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+00:13:36.607 response time in milliseconds: 126
+1 &lt; 400
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: pf-api-response-time
+1 &lt; vary: Origin
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 14
+1 &lt; Date: Tue, 07 May 2024 18:43:36 GMT
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+invalid amount
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

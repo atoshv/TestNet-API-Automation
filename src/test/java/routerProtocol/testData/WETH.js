@@ -7,7 +7,8 @@ function prepareWETHTransactions() {
                       parentAddress: iteration.WETHAddress,
                       parentChainId: iteration.chainId,
                       conversionAddress: conv.WETHAddress,
-                      conversionChainId: conv.chainId
+                      conversionChainId: conv.chainId,
+                      ParentWETHDecimal: iteration.WETHDecimal
                     });
                 });
             });

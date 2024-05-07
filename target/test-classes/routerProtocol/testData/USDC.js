@@ -7,7 +7,8 @@ function prepareUSDCTransactions() {
                       parentAddress: iteration.USDCAddress,
                       parentChainId: iteration.chainId,
                       conversionAddress: conv.USDCAddress,
-                      conversionChainId: conv.chainId
+                      conversionChainId: conv.chainId,
+                      ParentUSDCDecimal: iteration.USDCDecimal
                     });
                 });
             });
